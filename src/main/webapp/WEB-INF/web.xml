@@ -1,0 +1,55 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>StaticCrawler Webapp</display-name>
+
+  <servlet> 
+    <servlet-name>StaticCrawlerInit</servlet-name> 
+    <servlet-class>com.zlfund.staticcrawler.servlet.CrawlerInitServlet</servlet-class> 
+    <init-param>  
+        <param-name>EMAIL_HOST</param-name>  
+        <param-value>mail.jjmmw.com</param-value>  
+    </init-param>    
+    <init-param>  
+        <param-name>EMAIL_USERNAME</param-name>  
+        <param-value>service</param-value>  
+    </init-param>
+    <init-param>  
+        <param-name>EMAIL_PASSWORD</param-name>  
+        <param-value>4006788887jjmmw</param-value>  
+    </init-param>   
+    <init-param>  
+        <param-name>EMAIL_FROMADDRES</param-name>  
+        <param-value>service@jjmmw.com</param-value>  
+    </init-param>       
+    <init-param>  
+        <param-name>EMAIL_TOADDRES</param-name>  
+        <param-value>wangyf@jjmmw.com</param-value>  
+    </init-param>
+    <init-param>  
+        <param-name>DEFAULT_REDIS_HOST</param-name>  
+        <param-value>192.168.0.131</param-value>  
+    </init-param>     
+    <init-param>  
+        <param-name>DEFAULT_REDIS_PORT</param-name>  
+        <param-value>6379</param-value>  
+    </init-param>     
+    <init-param>  
+        <param-name>DEFAULT_REDIS_EXPIRED</param-name>  
+        <param-value>7200</param-value>  
+    </init-param>             
+    <load-on-startup>0</load-on-startup> 
+  </servlet> 
+  
+  <servlet>   
+          <servlet-name>crawl</servlet-name>   
+          <servlet-class>com.zlfund.staticcrawler.servlet.CrawlerServlet</servlet-class>   
+  </servlet>  
+  <servlet-mapping>   
+          <servlet-name>crawl</servlet-name>   
+          <url-pattern>/crawl</url-pattern>          
+  </servlet-mapping>  
+  
+</web-app>
