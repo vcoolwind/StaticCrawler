@@ -4,13 +4,11 @@
 - 这个项目[prerender](https://github.com/prerender/prerender)可以替代该工程。
 
 ### 使用方法：
-1. 下载、编译、打包
+- 下载、编译、打包
 ```bash
 git clone git@github.com:vcoolwind/StaticCrawler.git
 mvn eclipse:eclipse
 mvn package
 ```
-
-2. 部署到java web容器
-3. 浏览器访问可观测相关输出
-
+- 部署到java web容器
+- 浏览器访问可观测相关输出
