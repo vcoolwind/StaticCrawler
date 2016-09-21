@@ -5,11 +5,11 @@
 
 ### 使用方法：
 1. 下载、编译、打包
-```bash
-git clone git@github.com:vcoolwind/StaticCrawler.git
-mvn eclipse:eclipse
-mvn package
-```
+  ```bash
+  git clone git@github.com:vcoolwind/StaticCrawler.git
+  mvn eclipse:eclipse
+  mvn package
+  ```
 2. 部署到java web容器
 3. 浏览器访问可观测相关输出
 
